@@ -41,7 +41,7 @@ h1 {
   font-size: 1.4em;
 }
 p {
-  font-size: 1.1sem;
+  font-size: 1.1em;
   margin-top: 1.5px; /* Diminue la marge */
   margin-bottom: 35px;
 }
@@ -82,7 +82,6 @@ form input {
 /* Appliquer un style au rectangle */
 form button {
   display: flex;
-  /*width: 34%;*/
   padding: 15px 16px;
   background-color: #0065fc;
   color: white;
@@ -155,9 +154,6 @@ form button i {
   margin-bottom: 15px;
 }
 
-.familial {
-  color: black;
-}
 .icon-circle {
   display: inline-block;
   width: 15px;
@@ -241,11 +237,11 @@ form button i {
 
   form input {
     width: 55%;
-    margin-right: 5%; /* ??? */
+    margin-right: 5%;
   }
   form button {
     display: flex;
-    width: 15%;  /* ??? */
+    width: 15%;  
     border-radius: 15px;
     padding: 15px 14px 3px 14px;
   }
@@ -276,15 +272,13 @@ form button i {
   .disp-filtres {
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
     width: 100%;
   }
   .title-filtres {
     display: flex;
   }
-  .disp-filtres {
-    flex-direction: column;
-    margin-top: 15px;
-  }
+  
   .duo-filtres {
     width: 100%;
     flex-direction: row;
