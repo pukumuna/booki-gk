@@ -1,0 +1,322 @@
+.header-menu {
+  display: flex;
+  width: 100%;
+  height: 79px;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+.logo1 {
+  display: flex;
+  width: 61px;
+  height: 19px;
+  overflow: hidden;
+  align-self: center;
+}
+.logo1 img {
+  width: 100%;
+  height: 100%;
+}
+.menu {
+  display: flex;
+}
+
+nav ul {
+  display: flex; /* Utilisation de Flexbox */
+  list-style-type: none; /* Supprime les puces */
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+nav ul li {
+  font-size: 16px;
+  color: black;
+}
+
+.slogan {
+  margin-top: 45px;
+}
+h1 {
+  margin-bottom: 0; /* Supprime l'interligne */
+  font-size: 1.4em;
+}
+p {
+  font-size: 1.1sem;
+  margin-top: 1.5px; /* Diminue la marge */
+  margin-bottom: 35px;
+}
+
+.search {
+  display: flex;
+  width: 40%;
+  height: 49px;
+}
+
+.cercle {
+  display: flex;
+}
+
+form {
+  display: flex;
+}
+
+.fa-location-dot {
+  color: black;
+  font-size: 1.1em;
+  background-color: var(--main-bg-color);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+form input {
+  display: flex;
+  padding: 10px;
+  width: 70%;
+  box-sizing: border-box;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+/* Appliquer un style au rectangle */
+form button {
+  display: flex;
+  /*width: 34%;*/
+  padding: 15px 16px;
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+form button i {
+  font-size: 20px;
+}
+
+.filtres {
+  display: flex;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  gap: 15px;
+}
+.filtres i {
+  color: #0065fc;
+  font-size: 20px;
+}
+.title-filtres {
+  display: flex;
+  height: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  align-self: center;
+}
+
+.uno-filtre {
+  display: flex;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  justify-content: left;
+  align-items: center;
+  background-color: white; /* Fond blanc */
+  border: 2px solid #82bbebb3; /* Bordure légèrement blanche */
+  border-radius: 25px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour plus de profondeur */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.uno-filtre span {
+  font-size: 16px;
+}
+.duo-filtres {
+  display: flex;
+  gap: 10px;
+}
+.disp-filtres {
+  display: inline-flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.uno-filtre:hover {
+  cursor: pointer;
+  background-color: #deebff;
+}
+
+.fax {
+  color: #0065fc;
+  font-size: 1.5em;
+  margin-top: 15px;
+  margin-left: 07px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.familial {
+  color: black;
+}
+.icon-circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid rgb(157, 157, 205); /* Bordure circulaire en bleu */
+  text-align: center;
+  line-height: 6px;
+  position: relative;
+  background-color: white; /* Arrière-plan blanc autour de l'icône */
+}
+
+.icon-circle i {
+  color: rgb(68, 68, 235); /* Icône "i" en bleu */
+  font-size: 8px;
+}
+
+.log-text {
+  font-size: 15px; /* Taille du texte */
+  color: black; /* Couleur du texte */
+}
+.log-cercle {
+  display: flex;
+  align-items: center; /* Aligne verticalement l'icône et le texte */
+  gap: 10px; /* Espace entre l'icône et le texte */
+  margin: 40px 0 15px 0;
+}
+
+/* Style pour mobile *============================= Mobile =====================*/
+@media (max-width: 768px) {
+  .header-menu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+    
+  .logo1 {
+    display: flex;
+  }
+
+  .menu {
+    display: flex;
+    margin-top: 10px;
+  }
+  nav {
+    width: 100%;
+  }
+  
+  .nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    text-align: center;
+    width: 50%;
+    padding-bottom: 10px;
+  }
+  
+  nav ul li:hover {
+    color: #0065fc;
+    box-sizing: border-box;
+    border-bottom: 4px solid #0065fc;
+  }
+  
+  .search {
+    display: flex;
+    width: 100%;
+    gap: 9px;
+  }
+
+  .cerclex {
+    margin-right: 10%;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  form input {
+    width: 55%;
+    margin-right: 5%; /* ??? */
+  }
+  form button {
+    display: flex;
+    width: 15%;  /* ??? */
+    border-radius: 15px;
+    padding: 15px 14px 3px 14px;
+  }
+
+  button .txt-search {
+    /* Pas affichage du Texte Recherche */
+    display: none;
+  }
+  button .fa-search {
+    /* taille icone Loupe  */
+    font-size: 1.9em;
+  }
+
+  .cercle .fa-location-dot {
+    /* taille icone forme "aubergine" */
+    font-size: 1.9em;
+  }
+
+  .filtres {
+    flex-direction: column;
+    width: 100%;
+  }
+  .title-filtres {
+    align-self:self-start;
+    position: relative;
+    top: 18px; 
+  }
+  .disp-filtres {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .title-filtres {
+    display: flex;
+  }
+  .disp-filtres {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .duo-filtres {
+    width: 100%;
+    flex-direction: row;
+  }
+  .uno-filtre {
+    width: 48%;
+    margin-right: 2%;
+  }
+}
+
+/* Style pour tablette et desktop *********************** DeskTop ***************/
+@media (min-width: 767px) {
+  nav ul li:hover { /* ou : nav a:hover */
+    color: #0065fc;
+    padding: 5px;
+    border-top: 4px solid #0065fc;
+  }
+
+  button .txt-search {
+    /* Affichage du Texte Rechercher */
+    font-weight: 600;
+  }
+
+  button .fa-search {
+    /* Pas affichage de l'icône Loupe */
+    display: none;
+  }
+  .filtres {
+    flex-direction: row;
+    width: 100%;
+  }
+  .title-filtres {
+    align-self: center;
+  }
+}
